@@ -87,3 +87,14 @@ console.log(pares2)
 //Usando o método Array.of
 let copiasPares = Array.of(...pares2)
 console.log('cópias ', copiasPares)
+
+const numbersCopyTillSomeIndex = copiasPares.fill(0, 2, 4); //valor a ser preenchido, índice inicial, índice final (não incluído)
+console.log('cópias preenchidas com 0 ', numbersCopyTillSomeIndex)
+
+const ones = Array(6).fill(1); //cria um array de 6 elementos, todos com valor 1
+console.log('apenas numeros 1 ', ones)
+
+let copyArray = [1,2,3,4,5,6];
+// console.log('cópias ', copyArray.copyWithin(0, 3));//copia os elementos a partir do índice 3 para o índice 0 [4,5,6,4,5,6]
+console.log('cópias a partir de um index', copyArray.copyWithin(1, 3, 5)) // retornará [1,4,5,4,5,6]
+
